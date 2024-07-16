@@ -32,7 +32,6 @@
                     <div class="buttonInLine">
                         <a href="http://localhost:8080/posts/<%= iterator.id %>" class="view-full-button">View Full</a>
                         <a href="http://localhost:8080/posts/<%= iterator.id %>/edit" class="view-full-button">Edit Post</a>
-                        
                         <form method="post" action="/posts/<%= iterator.id %>?_method=DELETE">
                             <button class="deleteButton">Delete Post</button>
                         </form>

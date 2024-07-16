@@ -92,15 +92,12 @@ app.patch("/posts/:id", (req, res) => {
 
 
 
-
-
-
-// // route to delete the post
-// app.delete("/posts/:id",(req, res) => {
-//     let {id} = req.params;
-//     posts = posts.filter((p) => p.id !== id);
-//     res.redirect("/posts");
-// });
+// route to delete the post
+app.delete("/posts/:id",(req, res) => {
+    let {id} = req.params;
+    posts = posts.filter((p) => p.id !== id);
+    res.redirect("/posts");
+});
 
 
 app.listen(port, () => {
